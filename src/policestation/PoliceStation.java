@@ -16,6 +16,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
+ * School project for Y36TIN (Graph theory lessons)
  *
  * @author Ondřej Macoszek <ondra@macoszek.cz>
  */
@@ -270,19 +271,6 @@ public class PoliceStation
 		}
 	}
 	
-
-	/**
-	 * @param args the command line arguments
-	 */
-	public static void main(String[] args) throws FileNotFoundException, IOException
-	{
-		PoliceStation station = new PoliceStation();
-		
-		station.load("./data.txt");
-		station.solve();
-		
-	}
-	
 	public void printNodes(List<Node> list, String title)
 	{
 		System.out.println("---------------------------");
@@ -294,5 +282,14 @@ public class PoliceStation
 			System.out.print(node.id + ", ");
 		}
 		System.out.println("");
+	}
+
+	public static void main(String[] args) throws FileNotFoundException, IOException
+	{
+		PoliceStation station = new PoliceStation();
+		
+		station.load("./data.txt");
+		station.solve();
+		
 	}
 }

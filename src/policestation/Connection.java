@@ -20,8 +20,8 @@ public class Connection
 	{
 		distance = (int) Math.ceil(
 			Math.sqrt(
-				Math.pow(n1.x + n2.x, 2)
-			      + Math.pow(n1.x + n2.x, 2)
+				Math.pow(n1.x - n2.x, 2)
+			      + Math.pow(n1.y - n2.y, 2)
 			)
 		);
 	}
