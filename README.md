@@ -35,7 +35,7 @@ http://service.felk.cvut.cz/courses/36TI/xkacer/sem7.html
  * V kódu hojně používány implementace množiny HashSet (s konstantní operací contains)
 
 ## Grafická ukázka vstupních dat
-![Ukázka vstupních dat graficky](img/data.png)
+![Ukázka vstupních dat graficky](https://github.com/peruginni/Police-Station-Problem/raw/master/img/data.png)
 
 
 ## Zdroje a literatura
