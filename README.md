@@ -32,7 +32,16 @@ http://service.felk.cvut.cz/courses/36TI/xkacer/sem7.html
    * vybrat nejbližší riziková místa s vzdáleností nižší než zadaná konstanta 
  * Hotovo
 
- * V kódu hojně používány implementace množiny HashSet (s konstantní operací contains)
+ * V kódu hojně používány implementace množiny HashSet (s O(1) operací contains)
+ 
+ * Složitost
+   * časová
+     * load() … O(n) kde n je počet řádků vstupního souboru
+     * performDijkstra() … O(n^2) kde n je počet uzlů v grafu (protože mám prioritní frontu implementovanou pomocí sekvenčního vyhledávání)
+   * paměťová
+     * Θ(n^2) … kde n je počet uzlů … pro uložení matice vzdáleností … typ int
+     * Θ(p + c) … kde p je počet míst (uzlů) a c je počet spojení mezi místy (hrany) … typ je objekt Node nebo Connection
+       * objekty se na všechna další místa předávají pouze referencí
 
 ## Grafická ukázka vstupních dat
 ![Ukázka vstupních dat graficky](https://github.com/peruginni/Police-Station-Problem/raw/master/img/data.png)
